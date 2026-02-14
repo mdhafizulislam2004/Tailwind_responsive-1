@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Smart Coders</title>
     <link rel="icon" href="pciture/Signature-Logo.png" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
   </head>
 
@@ -12,16 +13,19 @@
     <!-- Nav_Section Start -->
     <nav class="bg-gray-800 shadow-2xl sticky z-10 top-0">
       <div class="containern sm:flex justify-between items-center mx-20 py-6">
-        <div class="text-center mb-3">
+        <div class="text-center mb-3 flex justify-between">
           <a href="#" class="text-white text-xl sm:text-3xl font-bold"
             ><span class="text-orange-500">S</span>mart Cod<span
               class="text-orange-500"
               >ers</span
             >
           </a>
+          <div>
+            <button id="menubtn" class="sm:hidden text-white"><i class="fa-solid fa-bars sm:hidden"></i></button>
+          </div>
         </div>
         <div class="text-white">
-          <ul class="sm:flex text-lg gap-7 text-center border-t sm:border-none">
+          <ul class="hidden sm:flex text-lg gap-7 text-center border-t sm:border-none">
             <a href="#">
               <li class="hover:text-orange-500 mt-4 sm:mt-0 text-orange-500">
                 Home
@@ -37,6 +41,24 @@
               <li class="hover:text-orange-500">Contact</li>
             </a>
           </ul>
+          <!-- Mobile Device -->
+           <ul id="mobile-menu" class="sm:hidden text-lg gap-7 text-center border-t sm:border-none">
+            <a href="#">
+              <li class="hover:text-orange-500 mt-4 sm:mt-0 text-orange-500">
+                Home
+              </li>
+            </a>
+            <a href="#">
+              <li class="hover:text-orange-500">Products</li>
+            </a>
+            <a href="#">
+              <li class="hover:text-orange-500">About</li>
+            </a>
+            <a href="#">
+              <li class="hover:text-orange-500">Contact</li>
+            </a>
+          </ul>
+          <!-- Mobile Device -->
         </div>
       </div>
     </nav>
@@ -304,5 +326,6 @@
       </div>
     </footer>
     <!-- Footer Section End -->
+     <script src="index.js"></script>
   </body>
 </html>
